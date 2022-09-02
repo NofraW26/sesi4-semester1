@@ -101,7 +101,7 @@
               <div class="card" style="background-color: #223">
                 <div class="card-header">
                   <label for="default-toggle-size-keluarga" class="inline-flex relative items-center cursor-pointer">
-                    <input type="checkbox" value="" id="default-toggle-size-keluarga" class="sr-only peer" />
+                    <input type="checkbox" value="" id="default-toggle-size-keluarga" onchange="lampuUtamaKeluarga()" class="sr-only peer" />
                     <div
                       class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"
                     ></div>
@@ -112,9 +112,9 @@
                   <div class="row d-flex justify-content-center">
                     <!-- lampu1 -->
                     <div class="col-4 col-md-3 d-flex flex-column justify-content-center align-items-center">
-                      <img src="/assets/images/off.gif" alt="" />
+                      <img src="/assets/images/off.gif" alt="lamp" id="keluarga1" />
                       <label for="small-toggle-keluarga1" class="inline-flex relative my-2 cursor-pointer">
-                        <input type="checkbox" value="" id="small-toggle-keluarga1" class="sr-only peer" />
+                        <input type="checkbox" value="" id="small-toggle-keluarga1" onchange="lampuKeluarga()" class="sr-only peer" />
                         <div
                           class="w-9 h-5 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"
                         ></div>
@@ -122,9 +122,9 @@
                     </div>
                     <!-- lampu2 -->
                     <div class="col-4 col-md-3 d-flex flex-column justify-content-center align-items-center">
-                      <img src="/assets/images/off.gif" alt="" />
+                      <img src="/assets/images/off.gif" alt="lamp" id="keluarga2" />
                       <label for="small-toggle-keluarga2" class="inline-flex relative my-2 cursor-pointer">
-                        <input type="checkbox" value="" id="small-toggle-keluarga2" class="sr-only peer" />
+                        <input type="checkbox" value="" id="small-toggle-keluarga2" onchange="lampuKeluarga()" class="sr-only peer" />
                         <div
                           class="w-9 h-5 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"
                         ></div>
@@ -132,9 +132,9 @@
                     </div>
                     <!-- lampu3 -->
                     <div class="col-4 col-md-3 d-flex flex-column justify-content-center align-items-center">
-                      <img src="/assets/images/off.gif" alt="" />
+                      <img src="/assets/images/off.gif" alt="lamp" id="keluarga3" />
                       <label for="small-toggle-keluarga3" class="inline-flex relative my-2 cursor-pointer">
-                        <input type="checkbox" value="" id="small-toggle-keluarga3" class="sr-only peer" />
+                        <input type="checkbox" value="" id="small-toggle-keluarga3" onchange="lampuKeluarga()" class="sr-only peer" />
                         <div
                           class="w-9 h-5 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"
                         ></div>
@@ -169,7 +169,7 @@
                   <div class="row d-flex justify-content-center">
                     <!-- lampu1 -->
                     <div class="col-4 col-md-3 d-flex flex-column justify-content-center align-items-center">
-                      <img src="/assets/images/off.gif" alt="" />
+                      <img src="/assets/images/off.gif" alt="lamp" />
                       <label for="small-toggle-makan1" class="inline-flex relative my-2 cursor-pointer">
                         <input type="checkbox" value="" id="small-toggle-makan1" class="sr-only peer" />
                         <div
@@ -206,7 +206,7 @@
                   <div class="row d-flex justify-content-center">
                     <!-- lampu1 -->
                     <div class="col-4 col-md-3 d-flex flex-column justify-content-center align-items-center">
-                      <img src="/assets/images/off.gif" alt="" />
+                      <img src="/assets/images/off.gif" alt="lamp" />
                       <label for="small-toggle-tidur1" class="inline-flex relative my-2 cursor-pointer">
                         <input type="checkbox" value="" id="small-toggle-tidur1" class="sr-only peer" />
                         <div
@@ -216,7 +216,7 @@
                     </div>
                     <!-- lampu2 -->
                     <div class="col-4 col-md-3 d-flex flex-column justify-content-center align-items-center">
-                      <img src="/assets/images/off.gif" alt="" />
+                      <img src="/assets/images/off.gif" alt="lamp" />
                       <label for="small-toggle-tidur1" class="inline-flex relative my-2 cursor-pointer">
                         <input type="checkbox" value="" id="small-toggle-tidur1" class="sr-only peer" />
                         <div
@@ -253,7 +253,7 @@
                   <div class="row d-flex justify-content-center">
                     <!-- lampu1 -->
                     <div class="col-6 col-md-3 d-flex flex-column justify-content-center align-items-center">
-                      <img src="/assets/images/off.gif" alt="" />
+                      <img src="/assets/images/off.gif" alt="lamp" />
                       <label for="small-toggle-tamu1" class="inline-flex relative my-2 cursor-pointer">
                         <input type="checkbox" value="" id="small-toggle-tamu1" class="sr-only peer" />
                         <div
@@ -263,7 +263,7 @@
                     </div>
                     <!-- lampu2 -->
                     <div class="col-6 col-md-3 d-flex flex-column justify-content-center align-items-center">
-                      <img src="/assets/images/off.gif" alt="" />
+                      <img src="/assets/images/off.gif" alt="lamp" />
                       <label for="small-toggle-tamu2" class="inline-flex relative my-2 cursor-pointer">
                         <input type="checkbox" value="" id="small-toggle-tamu2" class="sr-only peer" />
                         <div
@@ -273,7 +273,7 @@
                     </div>
                     <!-- lampu3 -->
                     <div class="col-6 col-md-3 d-flex flex-column justify-content-center align-items-center">
-                      <img src="/assets/images/off.gif" alt="" />
+                      <img src="/assets/images/off.gif" alt="lamp" />
                       <label for="small-toggle-tamu3" class="inline-flex relative my-2 cursor-pointer">
                         <input type="checkbox" value="" id="small-toggle-tamu3" class="sr-only peer" />
                         <div
@@ -283,7 +283,7 @@
                     </div>
                     <!-- lampu4 -->
                     <div class="col-6 col-md-3 d-flex flex-column justify-content-center align-items-center">
-                      <img src="/assets/images/off.gif" alt="" />
+                      <img src="/assets/images/off.gif" alt="lamp" />
                       <label for="small-toggle-tamu4" class="inline-flex relative my-2 cursor-pointer">
                         <input type="checkbox" value="" id="small-toggle-tamu4" class="sr-only peer" />
                         <div
@@ -319,5 +319,6 @@
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/flowbite@1.5.2/dist/flowbite.js"></script>
+    <script src="data.js"></script>
   </body>
 </html>
