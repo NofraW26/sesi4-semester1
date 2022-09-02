@@ -158,7 +158,7 @@
               <div class="card" style="background-color: #223">
                 <div class="card-header">
                   <label for="default-toggle-size-makan" class="inline-flex relative items-center cursor-pointer">
-                    <input type="checkbox" value="" id="default-toggle-size-makan" class="sr-only peer" />
+                    <input type="checkbox" value="" id="default-toggle-size-makan" onchange="lampuUtamaMakan()" class="sr-only peer" />
                     <div
                       class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"
                     ></div>
@@ -169,9 +169,9 @@
                   <div class="row d-flex justify-content-center">
                     <!-- lampu1 -->
                     <div class="col-4 col-md-3 d-flex flex-column justify-content-center align-items-center">
-                      <img src="/assets/images/off.gif" alt="lamp" />
+                      <img src="/assets/images/off.gif" alt="lamp" id="makan1" />
                       <label for="small-toggle-makan1" class="inline-flex relative my-2 cursor-pointer">
-                        <input type="checkbox" value="" id="small-toggle-makan1" class="sr-only peer" />
+                        <input type="checkbox" value="" id="small-toggle-makan1" onchange="lampuMakan()" class="sr-only peer" />
                         <div
                           class="w-9 h-5 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"
                         ></div>
@@ -195,7 +195,7 @@
               <div class="card" style="background-color: #223">
                 <div class="card-header">
                   <label for="default-toggle-size-tidur" class="inline-flex relative items-center cursor-pointer">
-                    <input type="checkbox" value="" id="default-toggle-size-tidur" class="sr-only peer" />
+                    <input type="checkbox" value="" id="default-toggle-size-tidur" onchange="lampuUtamaTidur()" class="sr-only peer" />
                     <div
                       class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"
                     ></div>
@@ -206,9 +206,9 @@
                   <div class="row d-flex justify-content-center">
                     <!-- lampu1 -->
                     <div class="col-4 col-md-3 d-flex flex-column justify-content-center align-items-center">
-                      <img src="/assets/images/off.gif" alt="lamp" />
+                      <img src="/assets/images/off.gif" alt="lamp" id="tidur1" />
                       <label for="small-toggle-tidur1" class="inline-flex relative my-2 cursor-pointer">
-                        <input type="checkbox" value="" id="small-toggle-tidur1" class="sr-only peer" />
+                        <input type="checkbox" value="" id="small-toggle-tidur1" onchange="lampuTidur()" class="sr-only peer" />
                         <div
                           class="w-9 h-5 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"
                         ></div>
@@ -216,9 +216,9 @@
                     </div>
                     <!-- lampu2 -->
                     <div class="col-4 col-md-3 d-flex flex-column justify-content-center align-items-center">
-                      <img src="/assets/images/off.gif" alt="lamp" />
-                      <label for="small-toggle-tidur1" class="inline-flex relative my-2 cursor-pointer">
-                        <input type="checkbox" value="" id="small-toggle-tidur1" class="sr-only peer" />
+                      <img src="/assets/images/off.gif" alt="lamp" id="tidur2" />
+                      <label for="small-toggle-tidur2" class="inline-flex relative my-2 cursor-pointer">
+                        <input type="checkbox" value="" id="small-toggle-tidur2" onchange="lampuTidur()" class="sr-only peer" />
                         <div
                           class="w-9 h-5 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"
                         ></div>
@@ -242,7 +242,7 @@
               <div class="card" style="background-color: #223">
                 <div class="card-header">
                   <label for="default-toggle-size-tamu" class="inline-flex relative items-center cursor-pointer">
-                    <input type="checkbox" value="" id="default-toggle-size-tamu" class="sr-only peer" />
+                    <input type="checkbox" value="" id="default-toggle-size-tamu" onchange="lampuUtamaTamu()" class="sr-only peer" />
                     <div
                       class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"
                     ></div>
@@ -253,9 +253,9 @@
                   <div class="row d-flex justify-content-center">
                     <!-- lampu1 -->
                     <div class="col-6 col-md-3 d-flex flex-column justify-content-center align-items-center">
-                      <img src="/assets/images/off.gif" alt="lamp" />
+                      <img src="/assets/images/off.gif" alt="lamp" id="tamu1" />
                       <label for="small-toggle-tamu1" class="inline-flex relative my-2 cursor-pointer">
-                        <input type="checkbox" value="" id="small-toggle-tamu1" class="sr-only peer" />
+                        <input type="checkbox" value="" id="small-toggle-tamu1" onchange="lampuTamu()" class="sr-only peer" />
                         <div
                           class="w-9 h-5 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"
                         ></div>
@@ -263,9 +263,9 @@
                     </div>
                     <!-- lampu2 -->
                     <div class="col-6 col-md-3 d-flex flex-column justify-content-center align-items-center">
-                      <img src="/assets/images/off.gif" alt="lamp" />
+                      <img src="/assets/images/off.gif" alt="lamp" id="tamu2" />
                       <label for="small-toggle-tamu2" class="inline-flex relative my-2 cursor-pointer">
-                        <input type="checkbox" value="" id="small-toggle-tamu2" class="sr-only peer" />
+                        <input type="checkbox" value="" id="small-toggle-tamu2" onchange="lampuTamu()" class="sr-only peer" />
                         <div
                           class="w-9 h-5 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"
                         ></div>
@@ -273,9 +273,9 @@
                     </div>
                     <!-- lampu3 -->
                     <div class="col-6 col-md-3 d-flex flex-column justify-content-center align-items-center">
-                      <img src="/assets/images/off.gif" alt="lamp" />
+                      <img src="/assets/images/off.gif" alt="lamp" id="tamu3" />
                       <label for="small-toggle-tamu3" class="inline-flex relative my-2 cursor-pointer">
-                        <input type="checkbox" value="" id="small-toggle-tamu3" class="sr-only peer" />
+                        <input type="checkbox" value="" id="small-toggle-tamu3" onchange="lampuTamu()" class="sr-only peer" />
                         <div
                           class="w-9 h-5 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"
                         ></div>
@@ -283,9 +283,9 @@
                     </div>
                     <!-- lampu4 -->
                     <div class="col-6 col-md-3 d-flex flex-column justify-content-center align-items-center">
-                      <img src="/assets/images/off.gif" alt="lamp" />
+                      <img src="/assets/images/off.gif" alt="lamp" id="tamu4" />
                       <label for="small-toggle-tamu4" class="inline-flex relative my-2 cursor-pointer">
-                        <input type="checkbox" value="" id="small-toggle-tamu4" class="sr-only peer" />
+                        <input type="checkbox" value="" id="small-toggle-tamu4" onchange="lampuTamu()" class="sr-only peer" />
                         <div
                           class="w-9 h-5 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"
                         ></div>
